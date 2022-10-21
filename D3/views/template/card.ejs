@@ -1,0 +1,26 @@
+<style>
+  .card-elemnt {
+
+    width: 280px;
+    margin: 10px 10px;
+  }
+</style>
+
+<div class="card text-center card-elemnt">
+  <div class="card-header">
+    <%= area.status %>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">
+      <%= area.name %>
+    </h5>
+    <p class="card-text">S/.
+      <%= area.precio %>
+    </p>
+    <a href="/areas/update/<%= area._id %>" class="btn btn-primary">Actualizar</a>
+    <a href="/areas/delete/<%= area._id %>" class="btn btn-success ">Eliminar</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div>

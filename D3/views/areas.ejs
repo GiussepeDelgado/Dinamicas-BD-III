@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+
+  <style>
+    main {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      flex-wrap: wrap;
+
+    }
+
+    .title {
+      margin: 20px 0px 10px 30px;
+    }
+  </style>
+  <h2 class="title">TITERES</h2>
+  <main>
+
+    <%areas.forEach(area=>{%>
+      <%-include("template/card",{area:area});%>
+        <%});%>
+  </main>
+
+  <%- include("partials/footer") %>
